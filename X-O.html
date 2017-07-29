@@ -1,0 +1,130 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title>Tic-tac-toe</title>
+            <meta charset='utf-8'>
+            <style>
+                .hr {
+                border: none; /* Убираем границу */
+                background-color: red; /* Цвет линии */
+                color: red; /* Цвет линии для IE6-7 */
+                height: 2px; /* Толщина линии */
+                }
+
+                .MainBlock {
+                        background-color: #00FFFF;
+                        width: 300px; /* Ширина блока */
+                        height: 300px; /* Высота блока */
+                        margin: auto; /* Значение отступов    */ 
+                        border: 4px solid black; /* Параметры границы  */
+                        padding: 10px;  /*Поля вокруг текста  */
+                        border-radius: 30px;
+                        line-height: 25px;
+                        
+                        
+                }
+
+                .InMainBlock {
+                    width: 300px; /* Ширина блока */
+                    height: 25px;
+                    background-color: #00FFFF;
+                    margin: auto; /* Значение отступов */
+                    border: 2px solid black;
+                    text-align: center;
+                    border-radius: 30px;
+                    font-weight: 900;
+                    color: black;
+
+                }
+
+                .Lines {
+                background: #00CED1;
+                width: 275px;
+                height: 10px; /* Толщина линии */
+                margin-top: 86.6px; 
+                border-radius: 50px;
+
+                }
+                
+                .L {
+                    height:275px;
+                    width: 10px;
+                    background: #00CED1;
+                    float: left;
+                    border-radius: 50px;
+                    margin-left: 86.6px;
+                  
+   
+                }
+
+                .Game {
+                       
+                       width: 275px;
+                       height: 275px;
+                       margin-left: 12.5px;
+                       margin-top: 2px;
+                }
+
+
+                .Button {
+                    width: 85;
+                    height: 85;
+                    color: black;
+                    /* background-color: black; */
+                    margin-top: 5;
+                    margin-left: 5;
+                  
+                
+                }
+
+
+                
+
+                </style>
+                </head>
+                <body>
+                             <div class="MainBlock">
+                                            <div class="InMainBlock " >TIC-TAC-TOE</div> 
+                                    <div class="Game" >
+                                           
+                                           <div> 
+                                                <div class="L"> </div>
+                                                <div class="L"> </div>
+                                           </div>
+                                            
+                                           <div style="position: absolute"> 
+                                                <div class="Lines"> </div>
+                                                <div class="Lines"> </div>
+                                           </div>
+
+                                    <div style="position: absolute">
+
+
+                                           <div id="first-line" style="float: left" >
+                                                    <div id="button1" class="Button">    </div>
+                                                    <div id="button2" class="Button">    </div>
+                                                    <div id="button3" class="Button">    </div>
+                                           </div>  
+
+                                           <div id="second-line" style="float: left">
+                                                    <div id="button4" class="Button">    </div>
+                                                    <div id="button5" class="Button">    </div>
+                                                    <div id="button6" class="Button">    </div>
+                                           </div>
+
+                                           <div id="third-line" style="float: left" >
+                                                    <div id="button7" class="Button">    </div>
+                                                    <div id="button8" class="Button">    </div>
+                                                    <div id="button9" class="Button">    </div>
+                                       </div>
+
+                                           
+                                    
+                                    </div>       
+                                            
+
+                             </div>
+               
+                    <!-- <canvas width="300" height="225" ; ></canvas> -->
+                </body>
+    </html>
