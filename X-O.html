@@ -29,7 +29,7 @@
                     height: 25px;
                     background-color: #00FFFF;
                     margin: auto; /* Значение отступов */
-                    border: 2px solid black;
+                    border: 2px solid #00CED1;
                     text-align: center;
                     border-radius: 30px;
                     font-weight: 900;
@@ -70,7 +70,7 @@
                     width: 85;
                     height: 85;
                     color: black;
-                    /* background-color: black; */
+                     /* background-color: black;  */
                     margin-top: 5;
                     margin-left: 5;
                   
@@ -124,7 +124,32 @@
                                             
 
                              </div>
+
+                             <script>
+                                        function doc(val, num) {
+                                            if (num != undefined) {
+                                                return document.getElementsByClassName(val)[num];
+                                        }   else {
+                                                return document.getElementById(val);
+                                        }
+                                        }
+
+
+
+                                        var bcount = 9;
+
+                                        for (i = 1; i <= bcount; i++) {
+                                            doc('button' + i).onclick = function(e) {
+                                                console.log(e.target.id);
+                                            }
+
+                                        }
+
+
+
+
+                              </script>           
                
-                    <!-- <canvas width="300" height="225" ; ></canvas> -->
+                   
                 </body>
     </html>
