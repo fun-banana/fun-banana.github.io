@@ -4,36 +4,31 @@
             <title>Tic-tac-toe</title>
             <meta charset='utf-8'>
             <style>
-                .hr {
-                border: none; /* Убираем границу */
-                background-color: red; /* Цвет линии */
-                color: red; /* Цвет линии для IE6-7 */
-                height: 2px; /* Толщина линии */
-                }
 
+                
                 .MainBlock {
-                        background-color: #00FFFF;
+                        background-color: #00FFFF; /*цвет блока */
                         width: 300px; /* Ширина блока */
                         height: 300px; /* Высота блока */
                         margin: auto; /* Значение отступов    */ 
                         border: 4px solid black; /* Параметры границы  */
                         padding: 10px;  /*Поля вокруг текста  */
-                        border-radius: 30px;
+                        border-radius: 30px; /*округление  */
                         line-height: 25px;
                         
                         
                 }
 
                 .InMainBlock {
-                    width: 300px; /* Ширина блока */
-                    height: 25px;
-                    background-color: #00FFFF;
-                    margin: auto; /* Значение отступов */
-                    border: 2px solid #00CED1;
-                    text-align: center;
-                    border-radius: 30px;
-                    font-weight: 900;
-                    color: black;
+                        width: 300px; /* Ширина блока */
+                        height: 25px; /* высота блока*/
+                        background-color: #00FFFF; /* цвет блока */
+                        margin: auto; /* Значение отступов */
+                        border: 2px solid #00CED1; /* обводка блока */
+                        text-align: center; /* рассположение текста */
+                        border-radius: 30px; /* округление */
+                        font-weight: 900;
+                        color: black; /* цвет текста */
 
                 }
 
@@ -126,6 +121,8 @@
                              </div>
 
                              <script>
+
+                            /*нажатие на кнопку */
                                         function doc(val, num) {
                                             if (num != undefined) {
                                                 return document.getElementsByClassName(val)[num];
