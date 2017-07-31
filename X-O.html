@@ -126,8 +126,10 @@
                              </div>
 
                              <script>
+                            /* переменные */
 
                                         var bcount = 9; 
+                                     
 
                             /* берем елемент по классу или ID    */
                                         function doc(val, num) {
@@ -140,10 +142,20 @@
                                     
                             /*финиш*/
 
+
+                                        
+
+                            
+
                                         
                             /*нажатие на кнопку */
-                                        for (i = 1; i <= bcount; i++) {
-                                            doc('button' + i).onclick = function(e) {
+                                        
+                        var Pbutton = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
+                        var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
+                        var test = Pbutton[RandomNumber];
+
+                                for (i = 1; i <= bcount; i++) {
+                                        doc('button' + i).onclick = function(e) {
                                                 console.log(e.target.id);
 
                                             //     // var anim=document.createElement('img')
@@ -154,13 +166,53 @@
                                             // doc('anim'+e.target.id).src='anim.gif'
                                             
                                             
-                                            doc(e.target.id).innerHTML = "x" ;
-                                            doc(e.target.id).style.opacity = 1;
-                                            console.log(e);
-                                            }
+                                            
+                                                doc(e.target.id).innerHTML = "x" ;
+                                                doc(e.target.id).style.opacity = 1;
+                                                console.log(e);
+                                                alert(test);
                                             
 
-                                        }
+
+
+                                              
+
+                                                doc(e.target.id + RandomNumber ).innerHTML = function(b) {
+                                                
+                                                alert(Pbutton[RandomNumber]);
+                                                if (RandomNumber = Pbutton) ;
+                                                doc(e.target.id).innerHTML = 'o';  
+
+                                                                }
+                                                        
+
+                                            }
+
+                                }
+                             /*ход бота */
+
+
+
+                                                
+                                                        
+                                                //     var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
+                                                //     alert(Pbutton[RandomNumber]);
+                                                //         if (RandomNumber = Pbutton) {
+                                                //         doc(e.target.id).innerHTML = 'o';
+                                                        
+                                                     
+
+                                                        
+                                                
+
+                                            
+
+
+                                                
+                                            
+                                            
+
+                                        
                             /*финиш*/
 
 
