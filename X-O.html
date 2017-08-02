@@ -65,7 +65,7 @@
                         width: 85;
                         height: 85;
                         color: #212121;
-                        /* background-color: black;  */
+                         /* background-color: black;   */
                         margin-top: 5;
                         margin-left: 5;
                         opacity: 0;
@@ -126,70 +126,90 @@
                              </div>
 
                              <script>
-                            /* переменные */
+                 /* переменные */
 
                                         var bcount = 9; 
+                                        var arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+                                        
                                      
+                /* финиш */
 
-                            /* берем елемент по классу или ID    */
+
+                /* берем елемент по классу или ID    */
                                         function doc(val, num) {
-                                            if (num != undefined) {
-                                                return document.getElementsByClassName(val)[num];
-                                        }   else {
-                                                return document.getElementById(val);
+                                                if (num != undefined) {
+                                                        return document.getElementsByClassName(val)[num];
+                                                }   else {
+                                                        return document.getElementById(val);
                                         }
                                         }
                                     
-                            /*финиш*/
+                 /*финиш*/
 
 
-                                        
+                 /*рандомное число*/
+                 
 
-                            
-
-                                        
-                            /*нажатие на кнопку */
-                                        
-                        var Pbutton = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
-                        var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
-                        var test = Pbutton[RandomNumber];
-
-                                for (i = 1; i <= bcount; i++) {
-                                        doc('button' + i).onclick = function(e) {
-                                                console.log(e.target.id);
-
-                                            //     // var anim=document.createElement('img')
-
-                                            //     // anim.src='anim.gif'
-
-                                            // doc(e.target.id).innerHTML="<img id='anim"+e.target.id+"' src='anim.gif'>";
-                                            // doc('anim'+e.target.id).src='anim.gif'
-                                            
-                                            
-                                            
-                                                doc(e.target.id).innerHTML = "x" ;
-                                                doc(e.target.id).style.opacity = 1;
-                                                console.log(e);
-                                                alert(test);
-                                            
-
-
-
-                                              
-
-                                                doc(e.target.id + RandomNumber ).innerHTML = function(b) {
+                                        function getRandom() {
+                                                // var arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+                                                var rand = Math.floor(Math.random() * arr.length);
+                                                return ( arr[rand] );
                                                 
-                                                alert(Pbutton[RandomNumber]);
-                                                if (RandomNumber = Pbutton) ;
-                                                doc(e.target.id).innerHTML = 'o';  
+                                        }
+
+
+                                        var o = getRandom();
+                                        delete arr[o()];
+                                        // delete arr[1];
+                                        // delete arr[2];
+                                        // delete arr[3];                                                                                                                                           
+                                        
+                                                                                                                                            
+
+
+                                        
+                                        
+                /*финиш*/
+
+
+                 /*нажатие на кнопку */
+                                        
+                                                
+                                                // var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
+                                                // var test = Pbutton[RandomNumber];
+
+                                        
+                                        for (i = 1; i <= bcount; i++) {
+                                                doc('button' + i).onclick = function(e) {
+                                                        console.log(e.target.id);
+
+                                                        doc(e.target.id).innerHTML = "x" ;
+                                                        doc(e.target.id).style.opacity = 1;
+                                                        console.log(e);
+                                                        // alert(getRandom());
+
+                                                        var buttons = [] ; 
+                                                        buttons.push(getRandom());
+                                                        alert (buttons);
+                                            
+
+
+
+                                        
+
+                                                // doc(e.target.id).innerHTML = function(b) {
+                                                
+                                                //         alert(getRandom);
+                                                //         if (RandomNumber = Pbutton) ;
+                                                //         doc(e.target.id).innerHTML = 'o';  
 
                                                                 }
                                                         
 
                                             }
 
-                                }
-                             /*ход бота */
+                                
+                /*ход бота */
 
 
 
@@ -200,7 +220,17 @@
                                                 //         if (RandomNumber = Pbutton) {
                                                 //         doc(e.target.id).innerHTML = 'o';
                                                         
-                                                     
+
+
+                                                // animation    // var anim=document.createElement('img')
+
+                                                //     // anim.src='anim.gif'
+
+                                                // doc(e.target.id).innerHTML="<img id='anim"+e.target.id+"' src='anim.gif'>";
+                                                // doc('anim'+e.target.id).src='anim.gif'
+                                                
+
+                                                // return parseInt(Math.floor(Math.random()*(9 - 1 + 1)) + 1);
 
                                                         
                                                 
@@ -213,7 +243,7 @@
                                             
 
                                         
-                            /*финиш*/
+                /*финиш*/
 
 
                                         
