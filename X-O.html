@@ -151,18 +151,17 @@
                  
 
                                         function getRandom() {
-                                                // var arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
                                                 var rand = Math.floor(Math.random() * arr.length);
                                                 return ( arr[rand] );
                                                 
                                         }
 
 
-                                        var o = getRandom();
-                                        delete arr[o()];
-                                        // delete arr[1];
-                                        // delete arr[2];
-                                        // delete arr[3];                                                                                                                                           
+                                        // var o = getRandom();
+                                        // delete arr[o()];
+                                        // // delete arr[1];
+                                        // // delete arr[2];
+                                        // // delete arr[3];                                                                                                                                           
                                         
                                                                                                                                             
 
@@ -191,6 +190,12 @@
                                                         var buttons = [] ; 
                                                         buttons.push(getRandom());
                                                         alert (buttons);
+
+                                                        var o = buttons();
+                                                        delete arr[o];
+                                                        // delete arr[1];
+                                                        // delete arr[2];
+                                                        // delete arr[3];   
                                             
 
 
