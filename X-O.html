@@ -150,7 +150,7 @@
                  /*рандомное число*/
                  
 
-                                        function getRandom() {
+                                        function getRandom(rn) {
                                                 var rand = Math.floor(Math.random() * arr.length);
                                                 return ( arr[rand] );
                                                 
@@ -165,6 +165,8 @@
                                                 // var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
                                                 // var test = Pbutton[RandomNumber];
 
+                                        // console.log(getRandom);
+
                                         
                                         for (i = 1; i <= bcount; i++) {
                                                 doc('button' + i).onclick = function(e) {
@@ -173,23 +175,17 @@
                                                         doc(e.target.id).innerHTML = "x" ;
                                                         doc(e.target.id).style.opacity = 1;
                                                         console.log(e);
-                                                        // alert(getRandom());
+                                                        console.log(getRandom());
 
-                                                        var n = buttons();
-                                                        delete arr[n];
-                                                        // delete arr[1];
-                                                        // delete arr[2];
-                                                        // delete arr[3];   
-                                            
 
                                                         var buttons = [] ; 
                                                         buttons.push(getRandom());
 
-                                                        var n = buttons();
+                                                        var n = buttons;
                                                         delete arr[n];
                                                         // delete arr[1];
                                                         // delete arr[2];
-                                                        // delete arr[3];   
+                                                        // delete arr[3];    
                                                         
                                                         alert (buttons);
 
