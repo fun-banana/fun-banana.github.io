@@ -196,8 +196,17 @@
 
                                                         alert (buttons);
                                                         console.log(buttons , arr);
-                                                        
 
+                                                        // for   (i = 1; i <= bcount; i++) 
+                                                        var rn2= getRandom();
+                                                                                doc('button' + rn2)= function(e) {
+                                                                                console.log(e.target.id);
+
+                                                                                doc(e.target.id).innerHTML = "o" ;
+                                                                                doc(e.target.id).style.opacity = 1;
+                                                                                console.log(e);
+                                                                                }
+                                                                        
 
 
                                                 // doc(e.target.id).innerHTML = function(b) {
