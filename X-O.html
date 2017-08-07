@@ -130,6 +130,8 @@
 
                                         var bcount = 9; 
                                         var arr = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+                                        var buttons = [];
+                                        
                                         
                                      
                 /* финиш */
@@ -161,33 +163,40 @@
 
                  /*нажатие на кнопку */
                                         
-                                                
-                                                // var RandomNumber = parseInt( Math.floor(Math.random() * Pbutton.length));
-                                                // var test = Pbutton[RandomNumber];
-
-                                        // console.log(getRandom);
-
-                                        
-                                        for (i = 1; i <= bcount; i++) {
+                                      for   (i = 1; i <= bcount; i++) {
                                                 doc('button' + i).onclick = function(e) {
                                                         console.log(e.target.id);
 
                                                         doc(e.target.id).innerHTML = "x" ;
                                                         doc(e.target.id).style.opacity = 1;
                                                         console.log(e);
-                                                        console.log(getRandom());
 
+                                                                                function searchInArr(arr, val) {
+                                                                                        for (var n = 1; n <= arr.length; n++) {
+                                                                                        if (arr[n - 1] == val) {
+                                                                                                return n - 1;
+                                                                                        }
+                                                                                        }
 
-                                                        var buttons = [] ; 
-                                                        buttons.push(getRandom());
+                                                                                        return -1;
+                                                                                        }
+                                                        var rn = getRandom();
+                                                        buttons.push(rn);
 
-                                                        var n = buttons;
-                                                        delete arr[n];
-                                                        // delete arr[1];
-                                                        // delete arr[2];
-                                                        // delete arr[3];    
-                                                        
+                                                        // var n = buttons;
+                                                        delete arr[searchInArr(arr, rn)];
+                                                        var newArr = [];
+                                                                                for(i=0; i<arr.length ; i++) {
+                                                                                        if (arr[i] != undefined){
+                                                                                        newArr[newArr.length]= arr[i];
+                                                                                        }
+                                                                                }
+                                                                                arr = newArr ;
+                                                                                        
+
                                                         alert (buttons);
+                                                        console.log(buttons , arr);
+                                                        
 
 
 
